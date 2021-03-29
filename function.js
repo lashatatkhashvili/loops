@@ -1,4 +1,4 @@
-// Check Winner Team
+//  Check Winner Team
 
 const powerRangers = [85, 54, 41];
 const fairyTails = [23, 34, 47];
