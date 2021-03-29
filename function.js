@@ -34,16 +34,11 @@ let ludovic = {
 };
 
 function calcTip(accounts) {
-  let tips = [];
-  accounts.map(function (account) {
-    tips.push(
-      account > 50 && account < 300
-        ? (account * 15) / 100
-        : (account * 20) / 100
-    );
+  return accounts.map(function (account) {
+    return account > 50 && account < 300
+      ? (account * 15) / 100
+      : (account * 20) / 100;
   });
-
-  return tips;
 }
 
 ludovic.tips = calcTip(ludovic.accounts);
