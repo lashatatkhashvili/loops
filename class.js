@@ -50,5 +50,3 @@ let axe = new Character("axe", "tank");
 let riki = new Ads("riki", 50);
 let tinker = new Mage("tinker");
 let oracle = new Support("oracle");
-
-riki.range();
