@@ -17,12 +17,11 @@ class Character {
 
 class Ads extends Character {
   constructor(name, attackDamages) {
-    super(name, "ads", attackDamages);
+    super(name, "ads");
     this.attackDamages = attackDamages;
   }
 
   range() {
-    console.log(this.attackDamages);
     this.attackDamages > 30 ? console.log("ranged") : console.log("malee");
   }
 }
@@ -51,3 +50,5 @@ let axe = new Character("axe", "tank");
 let riki = new Ads("riki", 50);
 let tinker = new Mage("tinker");
 let oracle = new Support("oracle");
+
+riki.range();
