@@ -11,8 +11,9 @@ function largestProd(
 ) {
   if (str.length == 0) return largest;
 
-  let count =
-    str.length >= n &&
+  let count = 1;
+
+  str.length >= n &&
     (count = str
       .slice(1, n + 1)
       .split("")
